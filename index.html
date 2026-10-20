@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Treasure Isle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="top"><h1>Treasure Isle</h1><div class="coins" id="coins"></div></div>
+  <div class="bars">
+    <div class="bar" id="eb"><i></i><span><b id="el"></b><em id="et" style="font-style:normal"></em></span></div>
+    <div class="bar" id="xb"><i></i><span><b id="xl"></b><em id="xt" style="font-style:normal"></em></span></div>
+  </div>
+  <canvas id="cv" tabindex="0" role="img" aria-label="Your island. Click a dirt mound to dig, or press Enter."></canvas>
+  <div class="msg" id="msg">Tap a dirt mound to dig. Each dig costs 1 energy.</div>
+  <div class="clear" id="clear"></div>
+  <section class="card"><h2>Quests</h2><div id="quests"></div></section>
+  <section class="card"><h2>Backpack</h2><div class="inv" id="inv"></div>
+    <div class="row"><button class="b" id="sell">Sell everything</button><button class="b" id="refill">Refill energy (30 coins)</button></div>
+  </section>
+  <div class="foot">Island <span id="isl"></span> · Progress saves in this browser · <button id="reset">Start over</button></div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>

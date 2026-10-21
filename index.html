@@ -10,20 +10,28 @@
 </head>
 <body>
 <main>
-  <div class="top"><h1>Treasure Isle</h1><div class="coins" id="coins"></div></div>
-  <div class="bars">
-    <div class="bar" id="eb"><i></i><span><b id="el"></b><em id="et" style="font-style:normal"></em></span></div>
-    <div class="bar" id="xb"><i></i><span><b id="xl"></b><em id="xt" style="font-style:normal"></em></span></div>
+  <h1>Treasure Isle</h1>
+  <div class="stage">
+    <canvas id="cv" tabindex="0" role="img" aria-label="Your island. Tap the grass to dig, or press Enter."></canvas>
+    <div class="hud top">
+      <div class="coins" id="coins"></div>
+      <div class="bar" id="eb"><i></i><span><b id="el"></b><em id="et" style="font-style:normal"></em></span></div>
+      <div class="bar" id="xb"><i></i><span><b id="xl"></b><em id="xt" style="font-style:normal"></em></span></div>
+      <div class="plaque" id="plaque"></div>
+    </div>
+    <div class="hud bottom"><div class="wood">
+      <div class="slot"><b>⚒</b>Add neighbour</div><div class="slot"><b>⚒</b>Add neighbour</div>
+      <a class="tool" href="#sec-quests"><b>📜</b>Quests</a><a class="tool" href="#sec-pack"><b>🎒</b>Pack</a><a class="tool" href="#sec-shop"><b>🛒</b>Store</a><a class="tool" href="#sec-col"><b>📖</b>Book</a>
+    </div></div>
   </div>
-  <canvas id="cv" tabindex="0" role="img" aria-label="Your island. Click a dirt mound to dig, or press Enter."></canvas>
-  <div class="msg" id="msg">Tap a dirt mound to dig. Each dig costs 1 energy.</div>
+  <div class="msg" id="msg">Tap the grass to dig. Each dig costs 1 energy.</div>
   <div class="clear" id="clear"></div>
-  <section class="card"><h2>Quests</h2><div id="quests"></div></section>
-  <section class="card"><h2>Backpack</h2><div class="inv" id="inv"></div>
+  <section class="card" id="sec-quests"><h2>Quests</h2><div id="quests"></div></section>
+  <section class="card" id="sec-pack"><h2>Backpack</h2><div class="inv" id="inv"></div>
     <div class="row"><button class="b" id="sell">Sell everything</button><button class="b" id="refill">Refill energy (30 coins)</button><button class="b" id="usemap">Read treasure map</button><button class="b" id="daily">Daily reward</button></div>
   </section>
-  <section class="card"><h2>Upgrades</h2><div id="shop"></div></section>
-  <section class="card"><h2>Collection <small id="colc"></small></h2><div class="inv" id="col"></div></section>
+  <section class="card" id="sec-shop"><h2>Upgrades</h2><div id="shop"></div></section>
+  <section class="card" id="sec-col"><h2>Collection <small id="colc"></small></h2><div class="inv" id="col"></div></section>
   <div class="foot">Island <span id="isl"></span> · Progress saves in this browser · <button id="reset">Start over</button></div>
 </main>
 <script src="game.js"></script>

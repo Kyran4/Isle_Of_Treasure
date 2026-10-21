@@ -26,7 +26,7 @@ else{gainXp(1);say("Just sand this time.")}
 save();render()}
 function fmt(s){s=Math.max(0,Math.ceil(s));return Math.floor(s/60)+":"+("0"+s%60).slice(-2)}
 function bars(){regen();var m=maxE();
-$("eb").firstChild.style.width=(S.energy/m*100)+"%";$("el").textContent="⚡ Energy "+S.energy+"/"+m;
+$("eb").firstChild.style.width=(S.energy/m*100)+"%";$("el").textContent="⚡ "+S.energy+"/"+m;
 $("et").textContent=S.energy<m?"+1 in "+fmt((REGEN-(Date.now()-S.tick))/1000):"Full";
 $("xb").firstChild.style.width=(S.xp/need()*100)+"%";$("xl").textContent="Level "+S.level;$("xt").textContent=S.xp+"/"+need()+" XP"}
 function render(){

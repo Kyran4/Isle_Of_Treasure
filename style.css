@@ -56,3 +56,5 @@ h1{text-align:center;margin-bottom:10px}
 .slot{background:#f4e6c0;color:#7a5a30;opacity:.85}
 .tool{background:linear-gradient(#ffe38a,#e7a93a);color:#4a2f0b;border:1.5px solid #8a5a18}
 .slot b,.tool b{display:block;font-size:1.05rem}
+.hud .bar span{white-space:nowrap;line-height:1;font-size:.74rem;padding:0 8px}
+.hud #eb span{color:#4a2f0b;text-shadow:0 1px 0 rgba(255,255,255,.5)}

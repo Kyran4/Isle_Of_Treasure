@@ -39,3 +39,4 @@ button.b:disabled{opacity:.4;cursor:default}
 .foot{margin-top:18px;text-align:center;font-size:.8rem;opacity:.7}
 .foot button{background:none;border:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit}
 @media (prefers-reduced-motion:reduce){.t.o.pop span{animation:none}.bar i{transition:none}}
+h2 small{font:600 .8rem Figtree,sans-serif;opacity:.7}
